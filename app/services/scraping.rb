@@ -26,7 +26,7 @@ class Scraping
   private
 
   def send_empty_node
-    AdminMailer.send_empty_node(empty_nodes: empty_nodes, product_id: product.id).deliver_now
+    # AdminMailer.send_empty_node(empty_nodes: empty_nodes, product_id: product.id).deliver_now
   end
 
   def values_from_scraping(mpm)

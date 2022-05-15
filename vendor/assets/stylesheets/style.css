@@ -2780,3 +2780,12 @@ input.toggle-switch:checked + .slider:before {
   transform: translate(-25px, -25px) scale(0.25) translate(25px, 25px);
 }
 .hidden{display: none;}
+.logo{
+  height: 20px;
+  width: 40px;
+}
+.sign-out{
+  border: 0px;
+  background: #ffffff;
+  height: 40px;
+}

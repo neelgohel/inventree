@@ -2,7 +2,7 @@
   <div class="top-left">
     <div class="navbar-header">
       <%= link_to root_path, class: 'navbar-brand' do%>
-        <%= image_tag('logo.png') %>
+        <%= image_tag 'logo.png', class: 'logo' %>
       <% end %>
       <a id="menuToggle" class="menutoggle"><i class="fa fa-bars"></i></a>
     </div>
@@ -15,7 +15,7 @@
         <% end %>
       <% end %>
       <div class='header-left'>
-        <%= link_to destroy_user_session_path, method: 'DELETE', class: 'nav-link' do %>
+        <%= button_to destroy_user_session_path, method: :delete, class: 'nav-link sign-out' do %>
           <i class="fa fa-power-off fa-fw"></i> <%= t('sign_out') %>
         <% end %>
       </div>

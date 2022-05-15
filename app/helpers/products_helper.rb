@@ -4,7 +4,7 @@ module ProductsHelper
   end
 
   def product_image(img)
-    img.present? ? img : image_path('logo.png')
+    img.present? ? img : image_path('logo.png', class: logo)
   end
 
   def price_for_product(price)
